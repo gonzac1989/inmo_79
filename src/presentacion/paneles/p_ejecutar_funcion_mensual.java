@@ -420,6 +420,7 @@ public class p_ejecutar_funcion_mensual extends javax.swing.JDialog implements S
         if (alq != null && esCN && mov == null) {
             fecharecorridadate = alq.getFecha();
             fechareajusteanual = fecharecorridadate; //NO SE LE SUMA 1 MES, PORQUE GUARDA MES DE REAJUSTE DIRECTO
+            fechareajustecomun = fechareajusteanual;//08-07 agrega fecha parcial de reajuste
         }
         while (!sonfechasiguales(fecharecorridadate, fechaactualdate)) {
             if (sonfechasiguales(fecharecorridadate, fechareajusteanual)) {
