@@ -909,9 +909,10 @@ public class p_fichainquilino extends javax.swing.JDialog implements observador_
         Date fechaactualdate = parsefechadate(fechaactual);
         //VA HASTA UN MES ANTES DEL MES ACTUAL, YA QUE PARA CONTROLAR MES ACTUAL, ESTA LA FUNCION MENSUAL
 
-        if (alq != null && esCN && mov == null) {
+        if (alq != null && esCN) {
             fecharecorridadate = alq.getFecha();
             fechareajusteanual = fecharecorridadate; //NO SE LE SUMA 1 MES, PORQUE GUARDA MES DE REAJUSTE DIRECTO
+            fechareajustecomun = fechareajusteanual;//08-07 agrega fecha parcial de reajuste
         }
         while (!sonfechasiguales(fecharecorridadate, fechaactualdate)) {
             if (sonfechasiguales(fecharecorridadate, fechareajusteanual)) {
