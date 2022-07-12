@@ -357,7 +357,7 @@ public class p_control {
             //ya existe
             BufferedWriter bw = new BufferedWriter(new FileWriter(archivo, true));
             String fechastr = parsefechalogstring(fecha);
-            bw.write("[" + fechastr + "]" + "\n");
+            bw.write("[" + fechastr + "] - V 8.1" + "\n");
             bw.write(info);
             bw.write("\n");
             bw.write("------------------------------------------------------------------------");
